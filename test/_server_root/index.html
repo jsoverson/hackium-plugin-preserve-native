@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Test page</title>
+  </head>
+
+  <body>
+    <script>
+      Function.prototype.toString = function () {
+        return 'Function.prototype.toString overridden';
+      };
+      JSON.stringify = function () {
+        return 'JSON.stringify overridden';
+      };
+    </script>
+  </body>
+</html>
